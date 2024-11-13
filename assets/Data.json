@@ -608,8 +608,8 @@
         {
             "id": "35",
             "title": "Superman Unbound",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
+            "releaseDate": "23 April 2013",
+            "duration": "1h 15m",
             "poster": "/assets/Supermanunbound.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
@@ -626,36 +626,36 @@
         {
             "id": "36",
             "title": "Planet Hulk",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
+            "releaseDate": "02 Feb, 2010",
+            "duration": "1h 15m",
             "poster": "/assets/Planet hulk.jpg",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Rick D wasserman", "role": "Hulk"},
+                {"name": "Kevin micheal Richardson", "role": "Korg"},
+                {"name": "Samuel khouth", "role": "Miek"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Sam Liu", "role": "Director"},
+                {"name": "Hans zimmer", "role": "Music Director"},
+                {"name": "Marvel", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
             "id": "37",
             "title": "Spiderman Into the Spiderverse",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
+            "releaseDate": "14 Dec, 2018",
+            "duration": "1h 57m",
             "poster": "/assets/Into the spiderverse.jpeg",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Shameik Moore", "role": "Miles Morales / Spider-Man"},
+                {"name": "Jake Johnson", "role": "Peter B. Parker / Spider-Man"},
+                {"name": "Hailee Steinfeld", "role": "Gwen Stacy / Spider-Woman"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Bob Persichetti", "role": "Director"},
+                {"name": "Daniel Pemberton", "role": "Music Director"},
+                {"name": "Columbia Pictures", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
@@ -663,7 +663,7 @@
             "id": "38",
             "title": "Ultimate Avengers",
             "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
+            "duration": "3h 02m",
             "poster": "/assets/Ultimate avengers.jpg",
             "cast": [
                 {"name": "Justin Gross", "role": "Steve Rogers / Captain America"},
