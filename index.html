@@ -167,7 +167,7 @@
                 const userCredential = await signInWithEmailAndPassword(auth, email, password);
                 const user = userCredential.user;
                 messageDiv.innerHTML = `<p style="color: green;">Welcome back, ${user.email}!</p>`;
-                window.location.href = "assets/home.html";  // Redirect to homepage or dashboard
+                window.location.href = "./assets/home.html";  // Redirect to homepage or dashboard
             } catch (error) {
                 messageDiv.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
             }
