@@ -136,6 +136,16 @@
                 emailError.textContent = "Please enter a valid email address.";
                 isValid = false;
             }
+            if (password.length > 30) {
+        // Display the message
+        passwordError.textContent = "Password is too long. Maximum length is 30 characters.";
+        passwordError.style.display = 'block'; // Ensure the message is visible
+        return false; // Prevent form submission
+    } else {
+        // Hide the message if the password is valid
+        passwordError.style.display = 'none';
+        return true;
+    }
     
             // Password validation
             if (password === "") 

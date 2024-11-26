@@ -5,519 +5,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All DC Movies</title>
     <style>
-        body {
-            margin: 0;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+        
+        .images{
+            height: 100px;
         }
-        header {
-            position: fixed;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            width: 100%;
-            background-color: black;
-            margin: 0;
-            top: 0;
-            padding: 0.5rem;
-            z-index: 4;
-        }
-        header img {
-            width: 40%;
-            aspect-ratio: 16/9;
-            margin: auto; /* Center the logo */
-        }
-        .DC_container {
+        .movie-card{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 6rem;
         }
-        .filter {
-    position: relative; /* Position relative for absolute child elements */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #f5f5f5;
+    font-weight: bolder;
 }
 
-.filter select {
-    padding: 0.5rem; /* Padding inside the dropdown */
-    border: none; /* Remove default border */
-    border-radius: 0.5rem; /* Rounded corners */
-    background-color: #333; /* Dark background */
-    color: white; /* White text color */
-    font-size: 1rem; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #101010;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.filter select:hover {
-    background-color: #555; /* Darker background on hover */
-    color: #ffe100; /* Change text color on hover */
+header h1 {
+    color: #ffe100;
+    font-size: 2rem;
 }
 
-/* Optional: Add a small arrow icon to the dropdown */
-.filter::after {
-   
+
+#movieGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.movie-card {
+    position: relative;
+    background-color: black;
+    color: #f5f5f5;
+    width: 20rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.images {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.movie-card:hover .images {
+    transform: scale(1.1);
+}
+
+
+.movie-info {
+    padding: 0.1rem;
+    background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    right: 10px; /* Positioning from the right */
-    top: 80%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for perfect centering */
-    color: white; /* Arrow color */
-    pointer-events: none; /* Prevent hover events on the arrow */
+    bottom: 0;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+    text-align: center;
 }
 
-        .DC_container img{
-            aspect-ratio: 2/2;
-        }
-        .slide {
-            position: relative;
-            margin: 1rem 0;
-        }
-        .slide img {
-            width: 100%;
-            border-radius: 1rem;
-        }
-        .contents {
-            width: 93%;
-            height: 93%;
-            top: 0;
-            left: 0;
-            position: absolute;
-            background: rgba(0, 0, 0, 0.6);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            opacity: 0;
-            transition: opacity 0.6s;
-            padding: 1rem;
-            border-radius: 1rem;
-        }
-        .slide:hover .contents {
-            opacity: 1;
-        }
-        .contents h1 {
-            font-size: 2rem;
-            color: #ffe100;
-            margin: 0.5rem 0;
-        }
-        .contents p {
-            font-size: 0.9rem;
-            color: #fff;
-            text-align: center; /* Center text */
-        }
-        .contents > * {
-            transform: translateY(25px);
-            transition: transform 0.6s;
-        }
-        .slide:hover .contents > * {
-            transform: translateY(0);
-        }
+.movie-card:hover .movie-info {
+    transform: translateY(0);
+}
+
+.movie-info h2 {
+    font-size: 1rem;
+    color: #ffe100;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.movie-info p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.movie-info p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.movie-card:hover .movie-info p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.movie-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 12px;
+}
+
+.movie-card:hover::before {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    #movieGallery {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .movie-card {
+        width: 180px;
+    }
+
+    .movie-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .movie-info p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-card {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
     </style>
 </head>
 <body>
     <header>
         <div class="DC_logo">
-            <img src="assets/DC/DC.png" alt="DC Logo">
-        </div>
-        <div class="filter">
-            <select id="movies" onhange="filterMovies()">
-                <option value="">ALL Movies</option>
-                <option value="JL">Justice League</option>
-                <option value="Batman">Batman</option>
-                <option value="Superman">Superman</option>
-                <option value="Suicide Squad">Suicide Squad</option>
-                <option value="Wonderman">Wonderman</option>
-                <option value="Aqua Man">Aquaman</option>
-                
-                
-                <!-- <option value="Guardians of the galaxy">Guardians of the Galaxy</option>
-                <option VALUE="Dr Strange">Dr Strange</option>
-                <option value="Ant man">Ant Man</option>
-                <option value="Black Panther">Black Panther</option>
-                <option value="Captain Marvel">Captain Marvel</option> -->
-            </select>
+            <img src="DC/DC.png" alt="DC Logo">
         </div>
     </header>
-    <div class="DC_container">
-        <div class="slide" data-title="Superman">
-            <img src="assets/DC/superman.jpg" alt="Super Man">
-            <div class="contents">
-                <h1>SUPER MAN</h1>
-                <p>When Tony Stark, an industrialist, is captured, he constructs a high-tech armoured suit to escape. Once he manages to escape, he decides to use his suit to fight against evil forces to save the world.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Superman">
-            <img src="assets/DC/superman_ii.jpg" alt="Superman 2">
-            <div class="contents">
-                <h1>SUPERMAN II</h1>
-                <p>Dr Bruce Banner subjects himself to high levels of gamma radiation, which triggers his transformation into a huge green creature, the Hulk, whenever he experiences negative emotions such as anger.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Batman">
-            <img src="assets/DC/batman.jpg" alt="Batman">
-            <div class="contents">
-                <h1>BATMAN</h1>
-                <p>Tony Stark is under pressure from various sources, including the government, to share his technology with the world. He must find a way to fight them while also tackling his other enemies.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Batman">
-            <img src="assets/DC/batman_returns.jpg" alt="Batman returns">
-            <div class="contents">
-                <h1>BATMAN RETURNS</h1>
-                <p>Thor is exiled by his father, Odin, the King of Asgard, to the Earth to live among mortals. When he lands on Earth, his trusted weapon Mjolnir is discovered and captured by S.H.I.E.L.D.</p>
-            </div>
-        </div>
-        <div class="slide"  data-title="Batman">
-            <img src="assets/DC/batman_begins.jpg" alt="Batman Begins">
-            <div class="contents">
-                <h1>BATMAN BEGINS</h1>
-                <p>During World War II, Steve Rogers decides to volunteer in an experiment that transforms his weak body. He must now battle a secret Nazi organisation headed by Johann Schmidt to defend his nation.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Batman">
-            <img src="assets/DC/dark_knight.jpg" alt="TDK">
-            <div class="contents">
-                <h1>THE DARK KNIGHT</h1>
-                <p>S.H.I.E.L.D. leader Nick Fury is compelled to launch the Avengers programme when Loki poses a threat to planet Earth. But the superheroes must learn to work together if they are to stop him in time.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Iron Man">
-            <img src="assets/Marvel/Iron man 3.jpg" alt="Iron Man 3">
-            <div class="contents">
-                <h1>IRON MAN 3</h1>
-                <p>Suffering from PTSD, Tony Stark encounters a formidable foe called the Mandarin. When he watches his world fall apart, he must rely on his own instincts as he embarks on a journey of retribution.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Thor">
-            <img src="assets/Marvel/Thor dark world.jpg" alt="Thor dark world">
-            <div class="contents">
-                <h1>THOR THE DARK WORLD</h1>
-                <p>While investigating a phenomenon, Jane gets sucked into a wormhole. Thor learns about her disappearance and returns to earth just as she reappears. But sensing something amiss, he takes her to Asgard.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Captain America">
-            <img src="assets/Marvel/Captain America winter soldier.jpg" alt="Captain America winter soldier">
-            <div class="contents">
-                <h1>CAPTAIN AMERICA THE WINTER SOLDIER</h1>
-                <p>Steve Rogers, along with Black Widow and Falcon, must uncover the secrets hidden within S.H.I.E.L.D., while also battling a dangerous new enemy, who is only known as The Winter Soldier.</p>
-            </div>
-        </div>
-        <div class="slide"  data-title="Guardians of the Galaxy">
-            <img src="assets/Marvel/Guardians of the galaxy.jpg" alt="Guardians of the galaxy">
-            <div class="contents">
-                <h1>GUARDIANS OF THE GALAXY</h1>
-                <p>A bunch of skilled criminals led by brash adventurer Peter Quill join hands to fight a villain named Ronan the Accuser who wants to control the universe with the help of a mystical orb.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Avengers">
-            <img src="assets/Marvel/Avengers Age of Ultron.jpg" alt="Avengers Age of Ultron">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Tony Stark builds an artificial intelligence system named Ultron with the help of Bruce Banner. When the sentient Ultron makes plans to wipe out the human race, the Avengers set out to stop him.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Ant man">
-            <img src="assets/Marvel/Antman.jpg" alt="Ant Man">
-            <div class="contents">
-                <h1>ANT MAN</h1>
-                <p>Scott, a master thief, gains the ability to shrink in scale with the help of a futuristic suit. Now he must rise to the occasion of his superhero status and protect his secret from unsavoury elements.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Captain America">
-            <img src="assets/Marvel/Captain America Civil war.jpg" alt="Captain America Civil war">
-            <div class="contents">
-                <h1>CAPTAIN AMERICA CIVIL WAR</h1>
-                <p>When the collective governments decide to ratify the Sokovia Accords, a legal document that regulates superhuman activity, it leads to a discordance between Captain America and Iron Man.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Dr Strange">
-            <img src="assets/Marvel/Doctor strange.jpg" alt="Doctor Strange">
-            <div class="contents">
-                <h1>DOCTOR STRANGE</h1>
-                <p>In an accident, Stephen Strange, a famous neurosurgeon, loses the ability to use his hands. He goes to visit the mysterious Ancient One to heal himself and becomes a great sorcerer under her tutelage.</p>
-            </div>
-        </div>
-        <div class="slide"  data-title="Guardians of the Galaxy">
-            <img src="assets/Marvel/Guardians of the galaxy 2.jpg" alt="Guardians of the galaxy 2">
-            <div class="contents">
-                <h1>GUARDIANS OF THE GALAXY VOL 2</h1>
-                <p>A bunch of skilled criminals led by brash adventurer Peter Quill join hands to fight a villain named Ronan the Accuser who wants to control the universe with the help of a mystical orb.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Spiderman">
-            <img src="assets/Marvel/spiderman homecoming.jpg" alt="Spiderman homecoming">
-            <div class="contents">
-                <h1>SPIDERMAN HOMECOMING</h1>
-                <p>Peter Parker tries to stop Adrian 'The Vulture' Toomes from selling weapons made with advanced Chitauri technology while trying to balance his life as an ordinary high school student.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Thor">
-            <img src="assets/Marvel/thor_ragnarok.jpg" alt="Thor Ragnorok">
-            <div class="contents">
-                <h1>THOR RAGNOROK</h1>
-                <p>Deprived of his mighty hammer Mjolnir, Thor must escape the other side of the universe to save his home, Asgard, from Hela, the goddess of death.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Black Panther">
-            <img src="assets/Marvel/black_panther.jpg" alt="black_panther">
-            <div class="contents">
-                <h1>BLACK PANTHER</h1>
-                <p>After his father's death, T'Challa returns home to Wakanda to inherit his throne. However, a powerful enemy related to his family threatens to attack his nation.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Avengers">
-            <img src="assets/Marvel/avengers_infinity_war.jpg" alt="avengers_infinity_war">
-            <div class="contents">
-                <h1>AVENGERS INFINITY WAR</h1>
-                <p>As Thanos sets about his quest for finding the infinity stones and carrying out his twisted scheme, the Avengers join forces with their allies to stop him from causing chaos and destruction.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Ant man">
-            <img src="assets/Marvel/antman_and_the_wasp.jpg" alt="antman_and_the_wasp">
-            <div class="contents">
-                <h1>ANTMAN AND THE WASP</h1>
-                <p>Despite being under house arrest, Scott Lang, along with the Wasp, sets out to help Dr Hank Pym to enter the quantum realm as they face new enemies along the way.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Captain Marvel">
-            <img src="assets/Marvel/captain_marvel.jpg" alt="Captain Marvel">
-            <div class="contents">
-                <h1>CAPTAIN MARVEL</h1>
-                <p>Amidst a mission, Vers, a Kree warrior, gets separated from her team and is stranded on Earth. However, her life takes an unusual turn after she teams up with Fury, a S.H.I.E.L.D. agent.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Avengers">
-            <img src="assets/Marvel/avengers_endgame.jpg" alt="avengers_endgame">
-            <div class="contents">
-                <h1>AVENGERS ENDGAME</h1>
-                <p>After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Spiderman">
-            <img src="assets/Marvel/spiderman_far_from_home.jpg" alt="spiderman_far_from_home">
-            <div class="contents">
-                <h1>SPIDERMAN FAR FROM HOME</h1>
-                <p>Peter Parker, the beloved superhero Spider-Man, faces four destructive elemental monsters while on holiday in Europe. Soon, he receives help from Mysterio, a fellow hero with mysterious origins.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Black widow">
-            <img src="assets/Marvel/black_widow.jpg" alt="black_widow">
-            <div class="contents">
-                <h1>BLACK WIDOW</h1>
-                <p>Natasha Romanoff, a member of the Avengers and a former KGB spy, is forced to confront her dark past when a conspiracy involving her old handler arises.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Shangchi">
-            <img src="assets/Marvel/shangchi_and_the_legend_of_the_ten_rings.jpg" alt="shangchi_and_the_legend_of_the_ten_rings">
-            <div class="contents">
-                <h1>SHANGCHI AND THE LEGEND OF THE TEN RINGS</h1>
-                <p>Shang-Chi, a martial artist, lives a quiet life after he leaves his father and the shadowy Ten Rings organisation behind. Years later, he is forced to confront his past when the Ten Rings attack him.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Eternals">
-            <img src="assets/Marvel/eternals.jpg" alt="eternals">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Spiderman">
-            <img src="assets/Marvel/spiderman_no_way_home.jpg" alt="spiderman_no_way_home">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Dr Strange">
-            <img src="assets/Marvel/doctor_strange_in_the_multiverse_of_madness.jpg" alt="doctor_strange_in_the_multiverse_of_madness">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Thor">
-            <img src="assets/Marvel/thor_love_and_thunder.jpg" alt="thor_love_and_thunder">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Black Panther">
-            <img src="assets/Marvel/black_panther_wakanda_forever.jpg" alt="black_panther_wakanda_forever">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Ant man">
-            <img src="assets/Marvel/antman_and_the_wasp_quantumania.jpg" alt="antman_and_the_wasp_quantumania">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Guardians of the Galaxy">
-            <img src="assets/Marvel/guardians_of_the_galaxy_vol_three.jpg" alt="guardians_of_the_galaxy_vol_three">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Captain Marvel">
-            <img src="assets/Marvel/The marvels.jpg" alt="The marvels">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Spiderman">
-            <img src="assets/Marvel/Spiderman.jpg" alt="Spiderman">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Spiderman">
-            <img src="assets/Marvel/spider_man_two.jpg" alt="Spider man 2">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Spiderman">
-            <img src="assets/Marvel/spider_man_three.jpg" alt="Spiderman 3">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Spiderman">
-            <img src="assets/Marvel/amazing_spiderman_ver2.jpg" alt="TASM">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Spiderman">
-            <img src="assets/Marvel/amazing_spiderman_two.jpg" alt="TASM 2">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Spiderman">
-            <img src="assets/Marvel/spiderman_into_the_spiderverse.jpg" alt="ITSV">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="Spiderman">
-            <img src="assets/Marvel/spiderman_across_the_spiderverse.jpg" alt="ATSV">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/xmen_first_class.jpg" alt="XMFC">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/xmen_days_of_future_past_ver5.jpg" alt="XMDFP">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/xmen_apocalypse_ver2.jpg" alt="XMA">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/xmen_ver2.jpg" alt="XM">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/xmen_2.jpg" alt="XM2">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/x_men_three.jpg" alt="XM3">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/x_men_origins_wolverine.jpg" alt="XOW">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/wolverine.jpg" alt="Wolverine">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/logan.jpg" alt="Logan">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/deadpool.jpg" alt="Deadpool">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/deadpool_two.jpg" alt="Deadpool 2">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-        <div class="slide" data-title="X Men">
-            <img src="assets/Marvel/deadpool_and_wolverine.jpg" alt="D&W">
-            <div class="contents">
-                <h1>DAREDEVIL</h1>
-                <p>Matt Murdock manages to overcome the challenges he faces due to being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
-            </div>
-        </div>
-    </div>
+   
+    <div class="gallery-container" id="movieGallery"></div>
     
     <script>
-        function filterMovies() {
-            const selectedValue = document.getElementById("movies").value.toLowerCase();
-            const slides = document.querySelectorAll(".slide");
+async function fetchMovies() {
+    try {
+        const response = await fetch('DC.JSON'); // Replace 'DC.json' with your actual file or API endpoint
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        renderMovies(data.DCMovies);  // Assuming your JSON has a "DCMovies" array
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+    }
+}
 
-            slides.forEach(slide => {
-                const title = slide.getAttribute("data-title").toLowerCase();
-                if (selectedValue === "" || title.includes(selectedValue)) {
-                    slide.style.display = "block"; // Show matching movies
-                } else {
-                    slide.style.display = "none"; // Hide non-matching movies
-                }
-            });
+// Function to render movies on the page
+function renderMovies(movies) {
+    const movieGallery = document.getElementById('movieGallery'); 
+    movieGallery.innerHTML = ''; 
+
+    movies.forEach(movie => {
+        const movieCard = document.createElement('div');
+        movieCard.className = 'movie-card';
+
+        const movieImage = document.createElement('img');
+        movieImage.className = 'images'; 
+        movieImage.src = movie.image;  
+        movieImage.alt = movie.title;  
+        movieCard.appendChild(movieImage);
+
+        const movieInfo = document.createElement('div');
+        movieInfo.className = 'movie-info';
+
+        const movieTitle = document.createElement('h2');
+        movieTitle.textContent = movie.title;  // Movie title
+        movieInfo.appendChild(movieTitle);
+
+        const movieDescription = document.createElement('p');
+        movieDescription.textContent = movie.description;  // Movie description
+        movieInfo.appendChild(movieDescription);
+
+        movieCard.appendChild(movieInfo);
+        movieGallery.appendChild(movieCard);  
+    });
+}
+
+document.addEventListener('DOMContentLoaded', fetchMovies); 
+
+function redirectToHome() {
+            window.location.href = '/'; // Change '/' to your home page URL
         }
     </script>
 </body>

@@ -4,14 +4,15 @@
             "id": "1",
             "title": "Daredevil",
             "releaseDate": "10 Apr, 2015",
+            "duration": "4h 02m",
             "poster": "/assets/Daredevil.jpg ",
             "cast": [
                 {"name": "Charlie Cox", "role": "Matt Murdock/Daredevil"},
-                {"name": "", "role": "Wilson Fisk/Kingpin"}
+                {"name": "Vincent D'Onofrio ", "role": "Wilson Fisk/Kingpin"}
             ],
             "crew": [
-                {"name": "Director A", "role": "Director"},
-                {"name": "Producer B", "role": "Producer"}
+                {"name": "Phil Abraham", "role": "Director"},
+                {"name": "Kati Johnston", "role": "Producer"}
             ],
             "trailerLink": "https://youtu.be/By-VTqrdqFI?feature=shared"
         },
@@ -19,15 +20,15 @@
             "id": "2",
             "title": "Punisher",
             "releaseDate": "17 Nov, 2017",
-            "poster": "/assets/images/brother.jpg",
+            "duration": "4h 02m",
+            "poster": "/assets/punisher.jpg",
             "cast": [
-                {"name": "Vijay Sethupathi", "role": "Lead"},
-                {"name": "Yogi Babu", "role": "Supporting"},
-                {"name": "Aishwarya Rajesh", "role": "Supporting"}
+                {"name": "Jon Bernthal", "role": "Frank Castle"},
+                {"name": "Ebon Moss-Bachrach", "role": "David Lieberman / Micro"}
             ],
             "crew": [
-                {"name": "Karthik Subbaraj", "role": "Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Jeremy Webb", "role": "Director"},
+                {"name": "Jared Ian Goldman", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example2"
         },
@@ -35,15 +36,16 @@
             "id": "3",
             "title": "Flash",
             "releaseDate": "07 Oct, 2014",
-            "poster": "/assets/images/lucky-baskar.jpg",
+            "duration": "4h 02m",
+            "poster": "/assets/Flash series.jpg",
             "cast": [
-                {"name": "Dhanush", "role": "Lead"},
-                {"name": "Priya Anand", "role": "Supporting"},
-                {"name": "Samuthirakani", "role": "Supporting"}
+                {"name": "Grant Gustin ", "role": "Barry Allen / The Flash"},
+                {"name": "Rick Cosnett", "role": "Eddie Thawne / Malcolm Gilmore / Cobalt Blue"},
+                {"name": "Danielle Panabaker", "role": "Caitlin Snow / Killer Frost / Frost / Khione"}
             ],
             "crew": [
-                {"name": "Lokesh Kanagaraj", "role": "Director"},
-                {"name": "Dream Works Production", "role": "Producer"}
+                {"name": "David McWhirter", "role": "Director"},
+                {"name": "J.P. Finn", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example3"
         },
@@ -51,15 +53,16 @@
             "id": "4",
             "title": "Arrow",
             "releaseDate": "10 Oct 2012",
-            "poster": "/assets/images/amaran.jpg",
+            "duration": "4h 02m",
+            "poster": "/assets/Arrow.jpg",
             "cast": [
-                {"name": "Sivakarthikeyan", "role": "Lead"},
-                {"name": "Sai pallavi", "role": "Supporting"},
-                {"name": "Karthik", "role": "Antagonist"}
+                {"name": "Stephen Amell", "role": "Oliver Queen / Arrow / Green Arrow"},
+                {"name": "Katie Cassidy ", "role": "Laurel Lance / Black Canary "},
+                {"name": "Willa Holland ", "role": "Thea Queen / Speedy"}
             ],
             "crew": [
-                {"name": "Rajkumar Periasamy", "role": "Director"},
-                {"name": " Kamal Haasan, R Mahendran, Mahendran", "role": "Producers"}
+                {"name": "James Bamford", "role": "Director"},
+                {"name": "Wendy Mericle", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example4"
         },
@@ -67,15 +70,16 @@
             "id": "5",
             "title": "Loki",
             "releaseDate": "09 June, 2021",
-            "poster": "/assets/images/bloody-begger.jpg",
+            "duration": "4h 02m",
+            "poster": "/assets/Loki.jpg",
             "cast": [
-                {"name": "Vijay Antony", "role": "Lead"},
-                {"name": "Nivetha Pethuraj", "role": "Supporting"},
-                {"name": "Sampath Raj", "role": "Antagonist"}
+                {"name": "Tom Hiddleston", "role": "Loki"},
+                {"name": "Sophia Di Martino", "role": "Sylvie"},
+                {"name": "Owen Wilson", "role": "Mobius M. Mobius"}
             ],
             "crew": [
-                {"name": "Balaji Sakthivel", "role": "Director"},
-                {"name": "Aascar Ravichandran", "role": "Producer"}
+                {"name": "Kate Herron", "role": "Director"},
+                {"name": "Kevin Feige", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example5"
         },
@@ -84,11 +88,11 @@
             "title": "Zack Snyder's Justice League",
             "releaseDate": "18 Mar, 2021",
             "duration": "4h 02m",
-            "poster": "/assets/images/venom.jpg",
+            "poster": "/assets/ZSJL.jpg",
             "cast": [
-                {"name": "Tom Hardy", "role": "Eddie Brock / Venom"},
-                {"name": "Naomie Harris", "role": "Shriek"},
-                {"name": "Woody Harrelson", "role": "Cletus Kasady / Carnage"},
+                {"name": "Ben Affleck", "role": "Bruce Wayne / Batman"},
+                {"name": "Henry Cavill", "role": "Clark Kent / Superman"},
+                {"name": "Ray Fisher", "role": "Victor Stone / Cyborg"},
                 {"name": "Michelle Williams", "role": "Anne Weying"}
             ],
             "crew": [
@@ -103,7 +107,7 @@
             "title": "Avengers Infinity War",
             "releaseDate": "27 Apr, 2018",
             "duration": "2h 29m",
-            "poster": "/assets/images/Lubber_Pandhu (1).jpg",
+            "poster": "/assets/Infinity war.jpg",
             "cast": [
                 {"name": "Harish Kalyan", "role": "Lead"},
                 {"name": "Attakathi Dheena", "role": "Supporting"},
@@ -120,7 +124,7 @@
             "title": "The Dark Knight",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Dark knight.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -138,7 +142,7 @@
             "title": "Avengers Endgame",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Endgame.png",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -156,7 +160,7 @@
             "title": "Man of steel",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Man of steel.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -174,7 +178,7 @@
             "title": "Superman & lois",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Superman & lois.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -192,7 +196,7 @@
             "title": "Joker folie a deux",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Folie deux.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -210,7 +214,7 @@
             "title": "Venom The Last Dance",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Venom 3.png",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -228,7 +232,7 @@
             "title": "The Penguin",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Penguin.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -246,7 +250,7 @@
             "title": "Deadpool & Wolverine",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/deadpool-and-wolverine.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -264,7 +268,7 @@
             "title": "Kraven The Hunter",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Kraven The Hunter.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -282,7 +286,7 @@
             "title": "Captain America Brave New World",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/CABNW.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -300,7 +304,7 @@
             "title": "Thunderbolts",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Thunderbolts.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -318,7 +322,7 @@
             "title": "Daredevil Born Again",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Daredevil4.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -336,7 +340,7 @@
             "title": "The Batman 2",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Batman2.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -354,7 +358,7 @@
             "title": "Watchmen",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Watchmen.jpeg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -372,7 +376,7 @@
             "title": "History of Violence",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/History of violence.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -390,7 +394,7 @@
             "title": "V for Vendetta",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/V for vendetta.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -404,11 +408,11 @@
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
+            "id": "24",
+            "title": "Constantine",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/cONSTANTINE.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -422,11 +426,11 @@
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
+            "id": "25",
+            "title": "Jonah Hex",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Jonah hex.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -440,11 +444,11 @@
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
+            "id": "26",
+            "title": "Men In Black",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/MIB.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -458,11 +462,11 @@
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
+            "id": "27",
+            "title": "Kingsman",
             "releaseDate": "18 July, 2008",
             "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "poster": "/assets/Kingsmen.jpg",
             "cast": [
                 {"name": "Rajinikanth", "role": "Lead"},
                 {"name": "Nayanthara", "role": "Supporting"},
@@ -476,488 +480,237 @@
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "id": "28",
+            "title": "Kick Ass",
+            "releaseDate": "16 April, 2010",
+            "duration": "1h 58m",
+            "poster": "/assets/Kick-ass.jpg",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Aaron Johnson", "role": "Dave Lizewski / Kick-Ass"},
+                {"name": "Chloë Grace Moretz", "role": "Mindy Macready / Hit-Girl"},
+                {"name": "Christopher Mintz-Plasse", "role": "Chris D’Amico / Red Mist"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Matthew Vaughn", "role": "Director"},
+                {"name": "Henry Jackman", "role": "Music Director"},
+                {"name": "Brad Pitt", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "id": "29",
+            "title": "Man Thing",
+            "releaseDate": "30 April, 2005",
+            "duration": "1h 37m",
+            "poster": "/assets/Man Thing.jpg",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Conan Stevens", "role": "Ted Sallis / Man-Thing"},
+                {"name": "Matthew Le Nevez", "role": "Sheriff Kyle Williams"},
+                {"name": "Rachael Taylor", "role": "Teri Elizabeth Richards"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Brett Leonard", "role": "Director"},
+                {"name": "Roger Mason", "role": "Music Director"},
+                {"name": "Avi Arad", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "id": "30",
+            "title": "Men In Black 3",
+            "releaseDate": "25 May, 2012",
+            "duration": "1h 46m",
+            "poster": "/assets/MIB3.webp",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Will Smith", "role": "James Darrell Edwards III / Agent J"},
+                {"name": "Josh Brolin", "role": "Kevin Brown / Agent K"},
+                {"name": "Jemaine Clement", "role": "Boris the Animal"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Barry Sonnenfeld", "role": "Director"},
+                {"name": "Danny Elfman", "role": "Music Director"},
+                {"name": "Columbia Pictures", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "id": "31",
+            "title": "Flashpoint Paradox",
+            "releaseDate": "30 July, 2013",
+            "duration": "1h 21m",
+            "poster": "/assets/Flashpointparadox.jpg",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Justin Chambers", "role": "Barry Allen / The Flash"},
+                {"name": "C. Thomas Howell", "role": "Eobard Thawne / Professor Zoom"},
+                {"name": "Kevin McKidd", "role": "Thomas Wayne / Batman"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Jay Oliva", "role": "Director"},
+                {"name": "Frederik Wiedmann", "role": "Music Director"},
+                {"name": "James Tucker", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "id": "32",
+            "title": "Justice League war",
+            "releaseDate": "February 4, 2014",
+            "duration": "1h 19m",
+            "poster": "/assets/JL War.jpg",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Alan Tudyk", "role": "Kal-El / Clark Kent / Superman"},
+                {"name": "Jason O'Mara", "role": "Bruce Wayne / Batman"},
+                {"name": "Steve Blum", "role": "Uxas / Darkseid"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Jay Oliva", "role": "Director"},
+                {"name": "Kevin Kliesch", "role": "Music Director"},
+                {"name": "Warner Bros. Animation", "role": "Producer"}
+            ],
+            "trailerLink": "https://www.youtube.com/watch?v=example8"
+
+        },
+        {
+            "id": "33",
+            "title": "Teen Titans Judas contract",
+            "releaseDate": "April 4, 2017",
+            "duration": "1h 24m",
+            "poster": "/assets/teen-titans-the-judas-contract.jpg",
+            "cast": [
+                {"name": "", "role": "Dick Grayson / Robin / Nightwing"},
+                {"name": "Stuart Allan", "role": "Damian Wayne / Robin"},
+                {"name": "Taissa Farmiga", "role": "Rachel Roth / Raven"}
+            ],
+            "crew": [
+                {"name": "Sam Liu", "role": "Director"},
+                {"name": "Frederik Wiedmann", "role": "Music Director"},
+                {"name": "James Tucker", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "id": "34",
+            "title": "Suicide Squad Hell to Pay",
+            "releaseDate": "March 27, 2018",
+            "duration": "1h 26m",
+            "poster": "/assets/Suicide squad.jpg",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Christian Slater", "role": "Floyd Lawton / Deadshot"},
+                {"name": "Vanessa Williams", "role": "Amanda Waller"},
+                {"name": "C. Thomas Howell", "role": "Eobard Thawne / Professor Zoom / Reverse-Flash"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Sam Liu", "role": "Director"},
+                {"name": "Robert J. Kral", "role": "Music Director"},
+                {"name": "Warner Bros. Animation", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "id": "35",
+            "title": "Superman Unbound",
+            "releaseDate": "23 April 2013",
+            "duration": "1h 15m",
+            "poster": "/assets/Supermanunbound.jpg",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Matt Bomer", "role": "Kal-El / Clark Kent / Superman"},
+                {"name": "John Noble", "role": "Brainiac"},
+                {"name": "Molly Quinn", "role": "Kara Zor-El / Supergirl"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "James Tucker", "role": "Director"},
+                {"name": "Kevin Kliesch", "role": "Music Director"},
+                {"name": "Warner Bros. Animation", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "id": "36",
+            "title": "Planet Hulk",
+            "releaseDate": "02 Feb, 2010",
+            "duration": "1h 15m",
+            "poster": "/assets/Planet hulk.jpg",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Rick D wasserman", "role": "Hulk"},
+                {"name": "Kevin micheal Richardson", "role": "Korg"},
+                {"name": "Samuel khouth", "role": "Miek"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Sam Liu", "role": "Director"},
+                {"name": "Hans zimmer", "role": "Music Director"},
+                {"name": "Marvel", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "id": "37",
+            "title": "Spiderman Into the Spiderverse",
+            "releaseDate": "14 Dec, 2018",
+            "duration": "1h 57m",
+            "poster": "/assets/Into the spiderverse.jpeg",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Shameik Moore", "role": "Miles Morales / Spider-Man"},
+                {"name": "Jake Johnson", "role": "Peter B. Parker / Spider-Man"},
+                {"name": "Hailee Steinfeld", "role": "Gwen Stacy / Spider-Woman"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Bob Persichetti", "role": "Director"},
+                {"name": "Daniel Pemberton", "role": "Music Director"},
+                {"name": "Columbia Pictures", "role": "Producer"}
+            ],
+            "trailerLink": "VideoPlayer.html?id=37"
+        },
+        {
+            "id": "38",
+            "title": "Ultimate Avengers",
+            "releaseDate": "18 July, 2008",
+            "duration": "3h 02m",
+            "poster": "/assets/Ultimate avengers.jpg",
+            "cast": [
+                {"name": "Justin Gross", "role": "Steve Rogers / Captain America"},
+                {"name": "Marc Worden",   "role": "Tony Stark / Iron Man"},
+                {"name": "Dave Boat", "role": "Thor"}
+            ],
+            "crew": [
+                {"name": "Curt Geda", "role": "Director"},
+                {"name": "Guy Michelmore", "role": "Music Director"},
+                {"name": "Bob Richardson", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "id": "39",
+            "title": "Spiderman Across the spiderverse",
+            "releaseDate": "02 June, 2023",
+            "duration": "2h 20m",
+            "poster": "/assets/Across the spiderverse.webp",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Karan Soni", "role": "Pavitr Prabhakar / Spider-Man India"},
+                {"name": "Jason Schwartzman", "role": "Johnathon Ohnn / the Spot"},
+                {"name": "Oscar Isaac", "role": "Miguel O'Hara / Spider-Man 2099"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Joaquim Dos Santos", "role": "Director"},
+                {"name": "Daniel Pemberton", "role": "Music Director"},
+                {"name": "Amy Pascal", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         },
         {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
+            "id": "40",
+            "title": "Big hero 6",
+            "releaseDate": "7 November 2014",
+            "duration": "1h 48m",
+            "poster": "/assets/Bighero 6.png",
             "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
+                {"name": "Scott Adsit", "role": "Baymax"},
+                {"name": "Ryan Pottera", "role": "Hiro Hamada"},
+                {"name": "Daniel Henney", "role": "Tadashi Hamada"}
             ],
             "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
-            ],
-            "trailerLink": "https://www.youtube.com/watch?v=example8"
-        },
-        {
-            "id": "20",
-            "title": "The Batman 2",
-            "releaseDate": "18 July, 2008",
-            "duration": "2h 32m",
-            "poster": "/assets/images/vettaiyan.jpg",
-            "cast": [
-                {"name": "Rajinikanth", "role": "Lead"},
-                {"name": "Nayanthara", "role": "Supporting"},
-                {"name": "Vivek", "role": "Comic Relief"}
-            ],
-            "crew": [
-                {"name": "S. Shankar", "role": "Director"},
-                {"name": "A. R. Rahman", "role": "Music Director"},
-                {"name": "Sun Pictures", "role": "Producer"}
+                {"name": "Don Hall", "role": "Director"},
+                {"name": "Henry Jackman", "role": "Music Director"},
+                {"name": "Roy Conli", "role": "Producer"}
             ],
             "trailerLink": "https://www.youtube.com/watch?v=example8"
         }
